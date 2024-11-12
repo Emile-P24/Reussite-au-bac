@@ -45,5 +45,5 @@ plt.show()
 by_origine['pourcentage_d_admis_au_baccalaureat'].mean().plot.bar()
 plt.show()
 
-by_origine['nombre_d_admis_au_baccalaureat_technologique'].sum().plot.bar()
+by_origine['nombre_d_admis_au_baccalaureat_technologique'].sum().drop(labels = "Ensemble", axis = 0).plot.bar() # drop pour supprimer la ligne "Ensemble" qui est la somme de toutes les autres
 plt.show()
